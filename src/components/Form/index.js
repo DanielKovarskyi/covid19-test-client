@@ -12,7 +12,7 @@ function Form(){
         axios.post("http://localhost:3001/qrcode", {data},
             {headers: { "Content-Type": "application/json"},  credentials: true}).then(function(res){
             setCodeList(codeList.concat(res.data));
-        });
+        }).catch((error) => (console.log(error)));
     };
 
     return(
