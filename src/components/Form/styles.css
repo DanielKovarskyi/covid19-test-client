@@ -1,0 +1,26 @@
+.app-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.form{
+    margin: 20px;
+    display: flex;
+    width: 80%;
+}
+.form-input{
+    width: 45%;
+    margin: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.codelist-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.codelist-container > :last-child{
+    border-radius: 7px;
+    border: 2px solid green;
+}
