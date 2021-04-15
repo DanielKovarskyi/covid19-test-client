@@ -31,9 +31,11 @@ describe('Form test', () => {
       email: 'abc@abc.com',
     });
 
+    const form = wrapper.find('form');
+
     // add one result
     await act(async () => {
-      await wrapper.find('form').simulate('submit');
+      await form.simulate('submit');
     });
 
     wrapper.update();
@@ -43,7 +45,7 @@ describe('Form test', () => {
 
     // add two results
     await act(async () => {
-      await wrapper.find('form').simulate('submit');
+      await form.simulate('submit');
     });
 
     wrapper.update();
